@@ -6,4 +6,4 @@ view:
 	$(BROWSER) output/index.html
 
 sync:
-	rsync -av output/ zlofgren.com:/var/www/zlofgren.com/output
+	rsync -av output/ zlofgren.com:/var/www/zlofgren.com/
