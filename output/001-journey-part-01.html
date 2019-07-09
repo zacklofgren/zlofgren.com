@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta http-equiv="Content-Language" content="en" />
+	<meta content="width=device-width" name="viewport" />
+	<meta content="journey,unix,linux,bsd,free software" name="keywords" />
+	<meta content="This is how I transitioned from proprietary software with Windows to free software with OpenBSD." name="description" />
+	<meta content="Zack Lofgren" name="author" />
+	<title>zlofgren.com</title>
+	<link rel="stylesheet" href="style.css" type="text/css" media="screen" />
+	<link rel="stylesheet" href="print.css" type="text/css" media="print" />
+	<link rel="alternate" href="atom.xml" type="application/atom+xml" title="zlofgren.com Atom Feed" />
+	<link rel="icon" href="/favicon.png" type="image/png" />
+	<!-- This site is created using saait: https://git.codemadness.org/saait/file/README.html -->
+</head>
+<body>
+	<nav id="menuwrap">
+		<table id="menu" width="100%" border="0">
+		<tr>
+			<td id="links" align="left">
+				<a href="index.html">Blog</a> |
+				<a href="about.html">About</a> |
+				<a href="https://github.com/zacklofgren" title="My GitHub">GitHub</a>
+			</td>
+			<td id="links-contact" align="right">
+				<span class="hidden"> | </span>
+				<a href="atom.xml">Atom feed</a> |
+				<a href="mailto:zack@zlofgren.com" title="Mail me">Mail</a>
+			</td>
+		</tr>
+		</table>
+	</nav>
+	<hr class="hidden" />
+	<main id="mainwrap">
+		<div id="main">
+			<h1>Posts</h1>
+			<table>
+<header>
+	<h1><a href="">The Journey Part 01: Software</a></h1>
+	<p><strong>Last modification on </strong> <time datetime="2019-07-02">2019-07-02</time></p>
+</header>
+
+<p>This is going to be a long couple of posts about my life. It's also going to be
+kind of a stream of consciousness. We'll see where this goes. For now, we're starting with how I
+started using free software and how I got to where I am today in regards to my
+ideas about it.</p>
+
+<h2 id="ubuntu"><a href="#ubuntu">Ubuntu - Where Everyone Starts</a></h2>
+<p>If you know anything about Linux or even just operating systems, there's a good
+chance you've heard of <a href="https://ubuntu.com">Ubuntu</a>. It's one of the
+most popular GNU/Linux operating systems. It is known for being a very polished
+distribution with sane defaults for most users and being more up-to-date than
+its parent, Debian GNU/Linux. It's most people's first Linux distribution.</p>
+
+<p>I first started looking into it spring
+of 2010. This was around the time Chrome OS had started becoming a thing, and a
+friend of mine and I wanted to compile Chromium OS and work on it. Mind you, I
+knew nothing about software development at that time, but this sounded like a
+fun project. This was around the time I
+had started getting interested in software development. I was registered to take the intro
+programming classes at my high school at that time. Google's instructions for compiling
+Chromium OS required Linux (Macs might have had instructions too like Android,
+but I definitely didn't have one of those).</p>
+
+<p>It was about April, so I waited the few days or weeks until Ubuntu 10.04
+Lucid Lynx came out. I first installed it via wubi, a program that let you
+install Ubuntu as a Windows application so that you could try it out without
+modifying your partitions. This made it really simple for one to try it without
+possible repercussions.</p>
+
+<p><a href="imgs/ubuntu_1004.png"><img src="imgs/ubuntu_1004.png" alt="Ubuntu 10.04 LTS" width="480" height="300" /></a></p>
+
+<p>This is what I booted up to. I think part of why I was so fascinated with Ubuntu
+was just due to it being different than Windows. It was so customizable. After a
+few weeks of using wubi, I convinced my dad to let me dual boot Ubuntu with
+Windows XP. I remember writing arguments as to why I should be able to use
+Linux, including that Office ran in WINE. Those were the days...</p>
+
+<h2 id="arch"><a href="#arch">I used arch btw</a></h2>
+<p>That summer was a lot of messing around with Linux. I distro-hopped a little
+bit, but I pretty much stuck with Ubuntu. I did start messing with Compiz (3D
+cubes ftw), Emerald window decorations, Avant Window Navigator (AWN), and Conky.
+I made some good looking desktops. I unfortunately still used a lot of proprietary software.
+Chrome and Dropbox made the switch easier. By the fall, I had heard a lot about
+<a href="https://archlinux.org">Arch Linux</a> and how it taught you a lot about
+Linux by installing it. This is when I
+got a taste of minimalism in software. This was before Arch became a meme, so
+the community was very different back then. My first Arch install took a few
+hours. I don't really remember much about it. I do know that I followed a
+Lifehacker guide for installing Arch + KDE in conjunction with the Arch Wiki.
+I learned so much by doing this. Eventually, I also played around with super
+lightweight installs with LXDE or just straight up Openbox. I liked Arch, and
+it's how I learn the different layers working together to get a modern Linux
+setup. However, I didn't like how manual it was for certain things. Eventually
+Linux 3.0 launched (it was on 2.x for <i>forever</i>) and broke GRUB (I still
+didn't understand that you should check the Arch website before updating). Soon
+after, they switched to systemd, and I was done. I thought Ubuntu was the best
+because it worked out of the box and didn't need a lot of configuration.</p>
+
+<h2 id="darkages"><a href="#darkages">The Dark Ages</a></h2>
+<p>Once I got to college, I built my first gaming computer. At that point, Linux
+kinda fell to the wayside because I hated rebooting. For the most part, Windows
+7 did what I needed it to. I still used Linux a bit, especially on my netbook.
+This is a screenshot from January 2013.</p>
+
+<p><a href="imgs/linux-rig-lubuntu.png"><img src="imgs/linux-rig-lubuntu.png" alt="My Lubuntu Desktop" width="480" height="300" /></a></p>
+
+<p>I eventually even got a MacBook Pro in 2014. I was full on proprietary. I viewed
+Mac OS X as the perfect intersection of proprietary polish and UNIX utils. For
+the next couple years after that, in the height of my addiction to video games,
+I just used Windows. All I did on my computer besides sshing to the Computer
+Science department computers for homework was games, so I just stayed in
+Windows.</p>
+
+<h2 id="suckless"><a href="#suckless">suckless</a></h2>
+<p>My interest in tiling window managers first started in high school when I installed
+ratpoison in Arch. Back then, using all terminal applications sounded extremely
+difficult and leet, so I wanted to try it out for a month. I used ratpoison so I
+could have more than one at a time (this was before I learned about screen and
+tmux). I think that lasted about a week before I gave up.</p>
+
+<p>The next bit until 2017 is kind of a blur. I did start playing around with tiling window managers for a bit, but I
+stayed with Windows for the most part. I do know that's when my dotfiles repo
+took shape because of the dates in at the top of each file. That's when I
+learned vim, tmux, and spectrwm.</p>
+
+<p>At some point, I found the <a href="https://suckless.org">suckless</a>
+project. That really interested me. I was a big fan of minimalist software that
+focused on correct code and not having bloat. I tried dwm, but I wasn't a fan of
+the defaults and was too lazy to configure it. I settled on spectrwm as my first
+main tiling window manager. I liked it because it was very similar to dwm, but
+it read a configuration file and had a couple extra layouts by default. I
+primarily used this with Arch Linux, but I dabbled with
+<a href="https://voidlinux.org">Void Linux</a> occasionally.</p>
+
+<p>From some point in 2017 until now, I started using Linux full time. This is
+when I developed my convictions regarding free software and started taking them
+seriously. I wanted privacy and was not ok with companies and the government
+having my data. I got to the point where I refused to use proprietary software
+if possible. I had always preferred open source software for various practical
+reasons, but now I was a free software advocate.</p>
+
+<p>I finally took the time to learn how to configure dwm, st, and other suckless
+tools with surprising ease. They weren't as difficult as I thought they'd be. I
+used these with Arch Linux for a while because I installed Arch so much over the
+years, the installation was pretty simple. I also started using full disk
+encryption at this time, and Arch had the best documentation for manually doing
+so outside of an installer.</p>
+
+<h2 id="openbsd"><a href="#openbsd">Puffiana Jones and the Hackers of the Lost Raid</a></h2>
+<p align="center"><a href="imgs/puffianajones.gif"><img src="imgs/puffianajones.gif" alt="OpenBSD 3.8 Poster" width="200" height="300"></a></p>
+<p>I distro hopped a lot after Arch. I wasn't sure what distro I wanted. I liked
+Arch for being rolling and up-to-date. I liked Debian because of the history it
+has. I liked Void because it didn't have systemd and followed a more UNIX-like
+philosophy.</p>
+
+<p>I eventually settled down on OpenBSD. I always had an interest in
+BSD as direct descendents of UNIX, but I had always been intimidated by it. I
+eventually gave it ago. I picked OpenBSD over FreeBSD, NetBSD, and other BSDs
+because it seemed to fit what I wanted the best. It also focused on code
+correctness like suckless software, and they also focus on security.
+Despite how hardcore, and sometimes elitist, the
+community is, I didn't give up and kept going. I think the fact that I started
+with Linux has given me unique challenges because all of the similarities have
+small differences that you don't expect.</p>
+
+<p>That takes me to where I'm at today. I'm using OpenBSD with dwm and other
+suckless and command line tools. The only graphical application that I
+regularly use is surf, the suckless web browser. It's been a long road, but I
+finally found where I'm happiest without a temptation to distro hop like I have
+for ages before. Though if I need a Linux distro for anything (thinking about
+getting a single board computer and those have better Linux support), then I'm
+going to go with Void Linux, since it's one of the most similar to BSD (though
+I've heard <a href="https://crux.nu">crux</a> is pretty great).</p>
+
+<p>I'm also discovering how <a href="http://copyfree.org">copyfree</a> software
+is more advantageous than copyleft software. I'm still figuring out where I
+stand on copyleft, but copyfree is what I'm writing and advocating for
+nowadays.</p>
+
+
+
+			</article>
+		</div>
+	</main>
+	<div id="main">
+		<p>All content on this site may be redistributed under the terms of the <a href="http://copyfree.org/content/standard/licenses/coil/license.txt">COIL</a>.</p>
+	</div>
+</body>
+</html>
