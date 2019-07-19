@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta http-equiv="Content-Language" content="en" />
+	<meta content="width=device-width" name="viewport" />
+	<meta content="unix,linux,bsd,free software,copyfree,bible-web" name="keywords" />
+	<meta content="bible-web is released. This article talks about why copyfree was crucial for its existence." name="description" />
+	<meta content="Zack Lofgren" name="author" />
+	<title>zlofgren.com</title>
+	<link rel="stylesheet" href="style.css" type="text/css" media="screen" />
+	<link rel="stylesheet" href="print.css" type="text/css" media="print" />
+	<link rel="alternate" href="atom.xml" type="application/atom+xml" title="zlofgren.com Atom Feed" />
+	<link rel="icon" href="/favicon.png" type="image/png" />
+	<!-- This site is created using saait: https://git.codemadness.org/saait/file/README.html -->
+</head>
+<body>
+	<nav id="menuwrap">
+		<table id="menu" width="100%" border="0">
+		<tr>
+			<td id="links" align="left">
+				<a href="index.html">Blog</a> |
+				<a href="about.html">About</a> |
+				<a href="https://github.com/zacklofgren" title="My GitHub">GitHub</a>
+			</td>
+			<td id="links-contact" align="right">
+				<span class="hidden"> | </span>
+				<a href="atom.xml">Atom feed</a> |
+				<a href="mailto:zack@zlofgren.com" title="Mail me">Mail</a>
+			</td>
+		</tr>
+		</table>
+	</nav>
+	<hr class="hidden" />
+	<main id="mainwrap">
+		<div id="main">
+			<h1>Posts</h1>
+			<table>
+<header>
+	<h1><a href="">bible-web and the Importance of Copyfree</a></h1>
+	<p><strong>Last modification on </strong> <time datetime="2019-07-19">2019-07-19</time></p>
+</header>
+
+<p><a href="https://github.com/zacklofgren/bible-web">bible-web</a> is now a thing.
+I forked <a href="https://github.com/bontibon/kjv">kjv</a> to make it. kjv is a cool
+set of scripts that takes a tab separated value file (tsv) and formats it for your pager.
+I wrote a couple of ugly scripts to generate a tsv for a World English Bible (WEB)
+version of kjv. Thus, bible-web. It's not called "web" purely because web is
+ambiguous. For starters, it's the name of the GNOME desktop
+<a href="https://wiki.gnome.org/Apps/Web/">web browser</a>. I wanted it to be clear
+what program you were using when you launched bible-web. This program would not have
+been possible without the components being copyfree.</p>
+
+<p>You can read the <a href="http://copyfree.org/standard">Copyfree
+Standard Definition here</a>. I won't be posting the whole thing. In essence if
+something is copyfree, it means you can use, modify, redistribute, etc. without
+restriction. Most copyfree licenses just state that you must attribute the
+original author/developer and that there's no warranty when using the work.
+This seems pretty great right? The fact that kjv and the World English Bible
+translation are copyfree (specifically, public domain) meant that I could use,
+modify, and redistribute them however I wanted. This benefits you, the reader,
+because now you can read the WEB in your terminal with bible-web.</p>
+
+<p>kjv and WEB being copyfree was a requirement for bible-web to exist in its
+current form. Initially, I tried to create a fork of kjv with the English Standard
+Version of the Bible, one of my preferred translations. However, due to the Terms
+and Conditions of their API, I could not download a whole copy of the ESV. I considered 
+creating a script that did this against their conditions since it was for personal use
+and I wouldn't redistribute it. However, I decided against it.
+<a href="https://mcmackins.org">Someone</a> suggested I just use WEB,
+so that it would be easier to implement and that I could redistribute it.</p>
+
+<p>Copyfree wasn't just useful for letting me use and redistribute the works in
+general. It also ensured that I was able to combine the works. Some free licenses,
+like the <a href="https://www.gnu.org/licenses/gpl-3.0.html">GPL</a> and the
+<a href="https://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</a> are great
+in that they make it so you can redistribute and modify the works. However, they
+restrict how you can do so. Both of these licenses stipulate that any derivatives
+of the work must also be licensed under the same terms. This would mean if kjv
+was licensed under the GPL (typically used for software) and WEB was licensed
+under the CC BY-SA 3.0 (typically used for written works and other art), then
+combining them in bible-web wouldn't be legal. Even though the licenses have the
+same goals of allowing people to modify and redistribute the works in much of
+the same ways to encourage the development of free works, they are incompatible
+with each other. As a result, they actually discourage the development of free works. If
+I couldn't find a copyfree bible reader and translation, I probably wouldn't have bothered
+making bible-web. If either of kjv or WEB were copyleft (assuming they used GPL or
+or CC BY-SA 3.0, the most popular licenses for each medium respectively), then it
+would've been illegal to include them together as the GPL is only for software 
+and CC is more for art since it doesn't specify what to do with source code.</p>
+
+<p>Copyfree licenses on the other hand let you do this. Any of the
+<a href="http://copyfree.org/standard/licenses">copyfree certified</a> licenses
+allow anyone to use the works however they see fit. Since I had the freedom to
+combine kjv and WEB into a new work, I could create bible-web. I have given also
+you that same freedom by releasing bible-web under the
+<a href="http://coil.apotheon.org/about/">Tesla Copyfree Open Innovation License</a>
+or COIL. This means you have the same freedoms to with bible-web that I had when
+creating it. This includes relicensing it if needed to be able to be combined with
+another work.</p>
+
+<p>Copyfree is how we can make this world better. Copyleft, in its aim to promote
+free culture, actually restricts it due to its strict licensing conditions for
+derivatives. Copyright just restricts. It doesn't help anyone contribute to culture.
+I encourage you to license your work under a copyfree license, preferably COIL, so
+that anyone will have complete freedom when using your work. Maybe, they'll
+create something cool that wouldn't have been possible otherwise.</p>
+
+<p><b>Disclaimer</b>: I don't think bible-web is really that amazing.
+I only wrote some scripts to take the text files WEB distributes and format them
+as a tsv file. It's just a great example of how copyfree is necessary. Also, I believe
+having free access to the Bible is important, and bible-web helps with that.</p>
+
+
+			</article>
+		</div>
+	</main>
+	<div id="main">
+		<p>All content on this site may be redistributed under the terms of the <a href="http://copyfree.org/content/standard/licenses/coil/license.txt">COIL</a>.</p>
+	</div>
+</body>
+</html>
